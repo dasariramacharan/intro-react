@@ -73,8 +73,8 @@ class App extends React.Component {
       tabChoice = (
         <List
           placeholder="Add Assignment..." 
-          currList={this.state.assignments}
-          addFunction={this.addAssignment}
+          currList={this.state.students}
+          addFunction={this.addStudent}
           title="Student Roster"
         />
       );
@@ -84,8 +84,8 @@ class App extends React.Component {
     if (this.state.buttonClicked === "grades") {
       tabChoice = (
         <Table
-          tableNames={this.state.assignments}
-          rows={this.state.students}
+          tableNames={this.state.grades}
+          rows={this.state.grades}
           addFunction={this.addGrade}
           data={this.state.grades}
         />
